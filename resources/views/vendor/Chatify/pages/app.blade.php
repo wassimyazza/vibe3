@@ -1,15 +1,7 @@
 @include('Chatify::layouts.headLinks')
 <div class="messenger">
 
-    <!-- Notification Alert -->
-    <div id="notification" class="fixed top-0 left-1/2 transform -translate-x-1/2 bg-green-500 text-white py-2 px-4 rounded-lg shadow-lg hidden">
-        <div class="flex items-center justify-between">
-            <span id="notification-message" class="text-sm font-semibold"></span>
-            <button id="close-notification" class="ml-3 text-white hover:text-gray-200">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
+
 
     {{-- ----------------------Users/Groups lists side---------------------- --}}
     <div class="messenger-listView {{ !!$id ? 'conversation-active' : '' }}">
